@@ -13,7 +13,7 @@
     background: #111;
   }
   
-  .ring {
+  .container {
     position: relative;
     width: 300px;
     height: 400px;
@@ -22,7 +22,7 @@
     align-items: center;
   }
   
-  .ring i {
+  .container i {
     position: absolute;
     width: 300px;
     height: 400px;
@@ -34,12 +34,12 @@
     opacity: 0.6;
   }
   
-  .ring i:nth-child(2) {
+  .container i:nth-child(2) {
     border: linear-gradient(45deg, #f00, #0ff);
     animation-delay: 2s;
   }
   
-  .ring i:nth-child(3) {
+  .container i:nth-child(3) {
     background: linear-gradient(45deg, #ff0, #f0f);
     animation-delay: 4s;
   }
@@ -75,11 +75,11 @@
     font-weight: bold;
   }
   
-  .ring:hover i {
+  .container:hover i {
     filter: drop-shadow(0 0 20px #0f0) brightness(1.2);
   }
   
-  /* Animation to rotate rings */
+  
   @keyframes animate {
     0% {
       transform: rotate(0deg);
